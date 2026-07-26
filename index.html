@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROLLEX Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="mainTitle">Aura Farming Edit</h1>
+
+    <nav>
+        <button onclick="changeCategory('Aura Farming Edit')">
+            Aura Farming
+        </button>
+
+        <button onclick="changeCategory('AMV')">
+            AMV
+        </button>
+
+        <button onclick="changeCategory('Car Edit')">
+            Car Edit
+        </button>
+
+        <button onclick="changeCategory('Cinematic')">
+            Cinematic
+        </button>
+    </nav>
+</header>
+
+
+<section class="portfolio">
+
+    <div class="card" onclick="openVideo('videos/aura.mp4', this)">
+        <video src="videos/aura.mp4"></video>
+        <h2>Aura Farming Edit</h2>
+    </div>
+
+
+    <div class="card" onclick="openVideo('videos/amv.mp4', this)">
+        <video src="videos/amv.mp4"></video>
+        <h2>AMV</h2>
+    </div>
+
+
+    <div class="card" onclick="openVideo('videos/car.mp4', this)">
+        <video src="videos/car.mp4"></video>
+        <h2>Car Edit</h2>
+    </div>
+
+
+    <div class="card" onclick="openVideo('videos/cinematic.mp4', this)">
+        <video src="videos/cinematic.mp4"></video>
+        <h2>Cinematic</h2>
+    </div>
+
+</section>
+
+
+<div id="videoPopup">
+
+    <span onclick="closeVideo()">✕</span>
+
+    <video id="player" controls></video>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
