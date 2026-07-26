@@ -1,5 +1,5 @@
 /* ===========================================
-   TROLLEX WORKS
+   TROLLEX WORKS 
    Premium Cinematic Portfolio
 =========================================== */
 
@@ -333,8 +333,9 @@ box-shadow:
 
 0 0 50px rgba(139,92,246,.7);
 
-  }
-/* ===========================
+
+
+   /* ===========================
    SECTION
 =========================== */
 
@@ -554,7 +555,9 @@ border-top:1px solid rgba(255,255,255,.08);
 
 margin-top:100px;
 
-   }/* ===========================
+   }
+
+}/* ===========================
    ANIMATIONS
 =========================== */
 
@@ -615,27 +618,11 @@ transform:translateY(0);
 
 /* Floating Animation */
 
-.project-card{ 
+.project-card{
 
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:22px;
-
-overflow:hidden;
-
-transition:.45s;
-
-cursor:pointer;
+animation:floatCard 5s ease-in-out infinite;
 
 }
-
-transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease;
-
-} 
 
 @keyframes floatCard{
 
@@ -661,13 +648,7 @@ animation:none;
 
 transform:translateY(-14px) scale(1.03);
 
-border:1px solid var(--purple);
-
-box-shadow:
-0 0 20px rgba(139,92,246,.4),
-0 0 40px rgba(139,92,246,.25);
-
-} 
+}
 
 /* Mobile */
 
@@ -785,4 +766,4 @@ background:linear-gradient(var(--purple),#5b21b6);
 
 border-radius:20px;
 
-   }
+}
