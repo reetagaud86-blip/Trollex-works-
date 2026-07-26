@@ -360,13 +360,36 @@ overflow:hidden;
 
 }
 
+.project-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:22px;
+
+padding:22px;
+
+transition:all .4s ease;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
 .project-card:hover{
 
-transform:translateY(-12px);
-
-box-shadow:0 0 35px rgba(139,92,246,.45);
+transform:translateY(-12px) scale(1.03);
 
 border:1px solid #8b5cf6;
+
+box-shadow:
+0 0 20px rgba(139,92,246,.5),
+0 0 45px rgba(139,92,246,.4),
+0 0 80px rgba(139,92,246,.25);
 
 }
 
