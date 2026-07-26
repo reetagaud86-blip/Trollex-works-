@@ -186,21 +186,37 @@ text-align:center;
 
 padding:20px;
 
+position:relative;
+
+z-index:2;
+
+}
+
 }
 
 .hero-content h1{
 
-font-size:80px;
+font-size:clamp(4rem,12vw,8rem);
 
-font-weight:800;
+font-weight:900;
 
-letter-spacing:5px;
+letter-spacing:12px;
+
+line-height:1;
+
+text-transform:uppercase;
 
 text-shadow:
 
-0 0 20px #8b5cf6,
+0 0 15px rgba(139,92,246,.8),
 
-0 0 40px #8b5cf6;
+0 0 35px rgba(139,92,246,.6),
+
+0 0 70px rgba(139,92,246,.4);
+
+animation:fadeUp 1.2s ease;
+
+              }
 
 }
 
@@ -287,3 +303,23 @@ text-shadow:
 0 0 15px #8b5cf6;
 
 }
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(80px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+   }
