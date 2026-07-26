@@ -252,15 +252,43 @@ box-shadow:
 
 }
 
-.hero-content button:hover{
+.hero-content button:hover{ 
 
-transform:translateY(-5px);
+transform:translateY(-8px) scale(1.08);
+
+background:#9d6cff;
 
 box-shadow:
-
-0 0 45px #8b5cf6;
+0 0 20px #8b5cf6,
+0 0 40px #8b5cf6,
+0 0 80px rgba(139,92,246,.8);
 
 }
+
+}
+.hero-content button{
+
+animation:pulseGlow 2.5s infinite;
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+box-shadow:0 0 15px #8b5cf6;
+}
+
+50%{
+box-shadow:
+0 0 30px #8b5cf6,
+0 0 60px rgba(139,92,246,.6);
+}
+
+100%{
+box-shadow:0 0 15px #8b5cf6;
+}
+
+} 
 
 /* SECTION */
 
