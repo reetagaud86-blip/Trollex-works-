@@ -615,9 +615,23 @@ transform:translateY(0);
 
 /* Floating Animation */
 
-.project-card{
+.project-card{ 
 
-animation:floatCard 5s ease-in-out infinite;
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+overflow:hidden;
+
+transition:.45s;
+
+cursor:pointer;
+
+}
 
 transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease;
 
