@@ -619,7 +619,9 @@ transform:translateY(0);
 
 animation:floatCard 5s ease-in-out infinite;
 
-}
+transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+
+} 
 
 @keyframes floatCard{
 
@@ -645,7 +647,13 @@ animation:none;
 
 transform:translateY(-14px) scale(1.03);
 
-}
+border:1px solid var(--purple);
+
+box-shadow:
+0 0 20px rgba(139,92,246,.4),
+0 0 40px rgba(139,92,246,.25);
+
+} 
 
 /* Mobile */
 
