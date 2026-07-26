@@ -1,5 +1,5 @@
 /* ===========================================
-   TROLLEX WORKS V3
+   TROLLEX WORKS
    Premium Cinematic Portfolio
 =========================================== */
 
@@ -334,3 +334,433 @@ box-shadow:
 0 0 50px rgba(139,92,246,.7);
 
   }
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+padding:120px 8%;
+
+position:relative;
+
+}
+
+.title{
+
+font-size:48px;
+
+text-align:center;
+
+margin-bottom:70px;
+
+text-shadow:0 0 20px var(--purple);
+
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:35px;
+
+}
+
+.project-card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+overflow:hidden;
+
+transition:.45s;
+
+cursor:pointer;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-12px);
+
+border:1px solid var(--purple);
+
+box-shadow:
+
+0 0 20px rgba(139,92,246,.35),
+
+0 0 40px rgba(139,92,246,.25);
+
+}
+
+.thumbnail{
+
+height:210px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+font-weight:700;
+
+background:linear-gradient(135deg,#1a1a1a,var(--purple));
+
+letter-spacing:3px;
+
+}
+
+.project-card h3{
+
+padding:22px 22px 8px;
+
+font-size:24px;
+
+}
+
+.project-card p{
+
+padding:0 22px 24px;
+
+color:#d3d3d3;
+
+line-height:1.8;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+#about{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+#about h2{
+
+font-size:46px;
+
+margin-bottom:25px;
+
+text-shadow:0 0 18px var(--purple);
+
+}
+
+#about p{
+
+font-size:18px;
+
+line-height:2;
+
+color:#d6d6d6;
+
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact{
+
+text-align:center;
+
+}
+
+#contact h2{
+
+font-size:46px;
+
+margin-bottom:40px;
+
+}
+
+.socials{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.socials a{
+
+padding:16px 32px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:white;
+
+text-decoration:none;
+
+transition:.35s;
+
+backdrop-filter:blur(12px);
+
+}
+
+.socials a:hover{
+
+background:var(--purple);
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 0 25px rgba(139,92,246,.6);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+color:#888;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+margin-top:100px;
+
+   }/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes heroFade{
+
+0%{
+opacity:0;
+transform:translateY(60px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes titleGlow{
+
+0%{
+
+text-shadow:
+0 0 15px var(--purple),
+0 0 35px var(--purple);
+
+}
+
+100%{
+
+text-shadow:
+0 0 30px var(--purple),
+0 0 70px var(--purple),
+0 0 110px rgba(139,92,246,.7);
+
+}
+
+}
+
+/* Scroll Animation */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Floating Animation */
+
+.project-card{
+
+animation:floatCard 5s ease-in-out infinite;
+
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Smooth hover */
+
+.project-card:hover{
+
+animation:none;
+
+transform:translateY(-14px) scale(1.03);
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+nav{
+
+padding:18px 6%;
+
+}
+
+nav ul{
+
+gap:20px;
+
+}
+
+.hero-content h1{
+
+font-size:58px;
+
+}
+
+.hero-content h2{
+
+font-size:22px;
+
+}
+
+.title{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:650px){
+
+nav{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+letter-spacing:2px;
+
+}
+
+.hero-content h2{
+
+font-size:19px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+.hero-content button{
+
+padding:15px 32px;
+
+}
+
+.projects{
+
+grid-template-columns:1fr;
+
+}
+
+.socials{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#050505;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(var(--purple),#5b21b6);
+
+border-radius:20px;
+
+   }
