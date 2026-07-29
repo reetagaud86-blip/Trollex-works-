@@ -1,0 +1,66 @@
+/* ===========================
+   TROLLEX STUDIO - STYLE.CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#bdbdbd;
+    margin-bottom:35px;
+}
+
+.scroll-btn{
+    text-decoration:none;
+    color:white;
+    border:2px solid red;
+    padding:14px 30px;
+    border-radius:40px;
+    transition:.4s;
+}
+
+.scroll-btn:hover{
+    background:red;
+    color:white;
+    box-shadow:0 0 20px red;
+}
+
+/* Portfolio */
+
+.portfolio{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:35px;
+    padding:80px 
