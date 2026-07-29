@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TROLLEX WORKS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<video class="bg-video" autoplay muted loop playsinline>
+<source src="assets/hero.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<nav>
+
+<div class="logo">TROLLEX WORKS</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>TROLLEX WORKS</h1>
+
+<h2>Cinematic Video Editor</h2>
+
+<p>
+Creating premium edits, Anime AMVs, Aura Farming edits,
+Car edits and Cinematic visuals.
+</p>
+
+<a href="#portfolio">
+<button>VIEW MY WORK</button>
+</a>
+
+</div>
+
+</header>
+
+<section id="portfolio">
+
+<h2 class="title">
+Featured Portfolio
+</h2>
+
+<div class="projects">
+
+<div class="project-card">
+
+<video class="thumbnail" controls muted preload="metadata">
+<source src="assets/aura.mp4" type="video/mp4">
+</video>
+
+<h3>Aura Farming Edit</h3>
+
+<p>
+High-energy edits with smooth transitions and cinematic effects.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<video class="thumbnail" controls muted preload="metadata">
+<source src="assets/amv.mp4" type="video/mp4">
+</video>
+
+<h3>Anime AMV</h3>
+
+<p>
+Professional anime edits synced perfectly with music.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<video class="thumbnail" controls muted preload="metadata">
+<source src="assets/car.mp4" type="video/mp4">
+</video>
+
+<h3>Car Edit</h3>
+
+<p>
+Luxury automotive edits with cinematic camera movement.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<video class="thumbnail" controls muted preload="metadata">
+<source src="assets/cinematic.mp4" type="video/mp4">
+</video>
+
+<h3>Cinematic Edit</h3>
+
+<p>
+Creative reels with professional colour grading and effects.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<p>
+
+Hello everyone! I am Trol
